@@ -77,8 +77,8 @@ namespace ListMembers
 
         static void Main(string[] args)
         {
-            BindingFlags BaseFlags = BindingFlags.Public | BindingFlags.FlattenHierarchy;
-            BindingFlags MethodFlags = BindingFlags.Instance | BindingFlags.Static;
+            BindingFlags BaseFlags = BindingFlags.Public;
+            BindingFlags MethodFlags = BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly;
             bool Public = true, Protected = false, Private = false;
 
             if (args.Length < 1)
